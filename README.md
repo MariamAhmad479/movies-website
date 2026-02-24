@@ -1,2 +1,47 @@
-# movies-website
-TOTOBEST – Responsive Movie Website built with HTML, CSS, and JavaScript. Features include user authentication (login/register with validation), movie search functionality, categorized movie sections with Swiper sliders, watchlist management (add/remove), and dedicated movie pages with trailers and details.
+# 🎬 TOTOBEST – Movie Website
+
+TOTOBEST is a responsive frontend movie website built using HTML, CSS, and JavaScript.  
+The platform allows users to browse categorized movies, search for titles, manage a personal watchlist, and watch trailers through an interactive and user-friendly interface.
+
+---
+
+## 🚀 Features
+
+- 🔐 Login page  
+- 📝 Registration page with client-side form validation  
+- 🔎 Live search functionality (real-time filtering)  
+- 🎞 Categorized movie sections  
+- 🎠 Swiper.js sliders for dynamic browsing  
+- ▶ Watch trailer functionality  
+- 🎬 Dedicated pages for each movie with details  
+- ⭐ Add and remove movies from Watchlist  
+- 📬 Contact Us page  
+- 📱 Responsive design  
+
+---
+
+## 🛠 Technologies Used
+
+- HTML5  
+- CSS3  
+- JavaScript (Vanilla JS)  
+- Swiper.js  
+- DOM Manipulation  
+- Form Validation  
+
+---
+
+## 🎓 Course Context
+
+This project was developed as part of the **Web Creation 101** course, focusing on fundamental frontend development concepts including HTML structure, CSS styling, JavaScript interactivity, and responsive design.
+
+---
+
+## 🎯 Key Concepts Demonstrated
+
+- Frontend UI/UX structuring  
+- JavaScript event handling  
+- DOM manipulation  
+- External library integration (Swiper.js)  
+- Client-side validation  
+- Dynamic content filtering  
