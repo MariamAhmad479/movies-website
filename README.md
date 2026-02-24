@@ -13,8 +13,7 @@ The platform allows users to browse categorized movies, search for titles, manag
 - 🎞 Categorized movie sections  
 - 🎠 Swiper.js sliders for dynamic browsing  
 - ▶ Watch trailer functionality  
-- 🎬 Dedicated pages for each movie with details  
-- ⭐ Add and remove movies from Watchlist  
+- 🎬 Dedicated pages for each movie with details  (only implemented this on one movie which is 'No Exit')
 - 📬 Contact Us page  
 - 📱 Responsive design  
 
@@ -24,7 +23,7 @@ The platform allows users to browse categorized movies, search for titles, manag
 
 - HTML5  
 - CSS3  
-- JavaScript (Vanilla JS)  
+- JavaScript
 - Swiper.js  
 - DOM Manipulation  
 - Form Validation  
@@ -44,7 +43,6 @@ This project was developed as part of the **Web Creation 101** course, focusing 
 - DOM manipulation  
 - External library integration (Swiper.js)  
 - Client-side validation  
-- Dynamic content filtering
 
 ---
 
