@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMovie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="shortcut icon" href="movies icon.png" types="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="main.html" class="logo">
+                My<span>Movie</span>
+            </a>
+            <img src="movies icon.png" href="main.html" alt="" class="home-icon">
+        </div>
+</header>
+<section class="login container">
+        <h1>Login Page</h1>
+        <form id="loginForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit" id="submit">Submit</button>
+            <a href="register.html" class="register-acc">
+                <span class="register">Create Account?</span>
+            </a>
+        </form>
+        
+    </section>
+    
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+            window.location.href = "main.html"; // Redirect to the main.html page
+        });
+    </script>
+</body>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 MyMovie. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+
+
+</html>

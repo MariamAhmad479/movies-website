@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MyMovie</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="movies icon.png" types="image/x-icon">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="nav container">
+                <a href="main.html" class="logo">
+                    My<span>Movie</span>
+                </a>
+                <img src="movies icon.png" href="main.html" alt="" class="home-icon">
+                <div class="search-box">
+                    <input type="search" name="" id="search-input" placeholder="Search movie">
+                    <i class='bx bx-search'></i>
+                </div>
+                <a href="#" class="user">
+                    <img src="user1.png" alt="" class="user-img">
+                </a>
+                <div class="navbar">
+                    <a href="main.html" class="navlink">
+                        <i class='bx bx-home' ></i>
+                        <span class="navtitle">Home</span>
+                    </a>
+                    <a href="trending.html" class="navlink">
+                        <i class='bx bx-trending-up' ></i>
+                        <span class="navtitle">Trending</span>
+                    </a>
+                    <a href="explore.html" class="navlink">
+                        <i class='bx bx-compass' ></i>
+                        <span class="navtitle">Explore</span>
+                    </a>
+                    <a href="watchlist.html" class="navlink">
+                        <i class='bx bx-list-ul' ></i>
+                        <span class="navtitle">Watchlist</span>
+                    </a>
+                    <a href="contact.html" class="navlink">
+                        <i class='bx bxs-contact' ></i>
+                        <span class="navtitle">Contact Us</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="play-container container">
+            <img src="no exit play.jpeg" alt="" class="play-img">
+            <div class="play-text">
+                <h2>No Exit</h2>
+                <div class="tags">
+                    <span>Thriller</span>
+                    <span>Mystery</span>
+                    <span>Disney+</span>
+                </div>
+                <a href="#" class="watchbutton" id="watchButton">
+                    <i class='bx bxs-right-arrow play-movie' ></i>
+                    <span>Watch the Trailer</span>
+                </a>
+            </div>
+            <div class="video-container" id="videoContainer" style="display: none;">
+                <div class="video-box">
+                    <video id="myvideo" src="No Exit _ Official Trailer _ 20th Century Studios.mp4" controls></video>
+                    <i class='bx bx-x close-video' id="closeVideo" ></i>
+                </div>
+            </div>
+        </div>
+        <div class="movie-info container">
+            <h2>Synopsis</h2>
+            <hr width="100%" size="4" color:var(--container-color) noshade>
+            <p>During a blizzard and stranded at an isolated highway rest stop in the mountains, a college student discovers a kidnapped child hidden in a car belonging to one of the people inside</p>
+            <h2>Cast</h2>
+            <hr width="100%" size="4" color:var(--container-color) noshade>
+            <p>  
+                Havana Rose Liu<br>
+                Danny Ramirez<br>
+                David Rysdahl<br>
+                Mila Harris	Mila Harris<br>
+                Dennis Haysbert	Dennis Haysbert<br>
+                Dale Dickey	</p>
+        </div>
+        <div class="WatchMovie container">
+            <a href="#" class="watchbutton2" id="watchButton2">
+                <i class='bx bxs-right-arrow play-movie1' ></i>
+                <span>Watch the Movie ↓</span>
+            </a>
+        </div>
+
+        <div class="video-container2" id="videoContainer2" style="display: none;">
+            <div class="video-box">
+                <video id="myvideo2" src="No.Exit.2022.240p.HULU.WEB-DL.MyCima.world.mp4" controls></video>
+                <i class='bx bx-x close-video' id="closeVideo2" ></i>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2024 MyMovie. All rights reserved.</p>
+        </div>
+        <script src="swiper-bundle.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+
+    
+        
+</html>

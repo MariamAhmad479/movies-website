@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MyMovie</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="swiper-bundle.min.css">
+        <link rel="shortcut icon" href="movies icon.png" types="image/x-icon">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="nav container">
+                <a href="main.html" class="logo">
+                    My<span>Movie</span>
+                </a>
+                <img src="movies icon.png" href="main.html" alt="" class="home-icon">
+                <div class="search-box">
+                    <input type="search" name="" id="search-input" placeholder="Search movie">
+                    <script>
+                        document.getElementById('search-input').addEventListener('input', function() {
+                            const searchTerm = this.value.toLowerCase();
+                            const allMovieBoxes = document.querySelectorAll('.moviebox');
+                
+                            allMovieBoxes.forEach(movieBox => {
+                                const title = movieBox.querySelector('.movietitle');
+                
+                                if (title && title.textContent.toLowerCase().includes(searchTerm)) {
+                                    movieBox.style.display = 'block';
+                                } else {
+                                    movieBox.style.display = 'none';
+                                }
+                            });
+                        });
+                    </script>
+                    <i class='bx bx-search'></i>
+                </div>
+                <a href="user.html" class="user">
+                    <img src="user1.png" alt="" class="user-img">
+                </a>
+                <div class="navbar">
+                    <a href="main.html" class="navlink">
+                        <i class='bx bx-home' ></i>
+                        <span class="navtitle">Home</span>
+                    </a>
+                    <a href="trending.html" class="navlink">
+                        <i class='bx bx-trending-up' ></i>
+                        <span class="navtitle">Trending</span>
+                    </a>
+                    <a href="explore.html" class="navlink">
+                        <i class='bx bx-compass' ></i>
+                        <span class="navtitle">Explore</span>
+                    </a>
+                    <a href="watchlist.html" class="navlink">
+                        <i class='bx bx-list-ul' ></i>
+                        <span class="navtitle">Watchlist</span>
+                    </a>
+                    <a href="contact.html" class="navlink">
+                        <i class='bx bxs-contact' ></i>
+                        <span class="navtitle">Contact Us</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <section class="home container" id="home">
+            <img src="resizecom_Barbie-movie-poster-1.png" alt="" class="home-img">
+            <div class="hometext">
+                <h1 class="featured">Barbie</h1>
+                <p>Releasing 12 July</p>
+                <a href="#" class="watchbutton">
+                    <i class='bx bxs-right-arrow' ></i>
+                    <span>Watch the Trailer</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="releases container" id="new-releases">
+            <div class="heading">
+                <h2 class="releases-title">New Releases</h2>
+            </div>
+            <div class="new-movies swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="moviebox">
+                            <img src="no exit.jpg" alt="" class="movieimg">
+                            <div class="text">
+                                <h2 class="movietitle">No Exit</h2>
+                                <span class="genre">Thriller</span>
+                                <a href="NoExit-page.html" class="playbutton">
+                                    <i class='bx bxs-right-arrow' ></i>
+                                </a>
+                                <img src="save-instagram.png" alt="save to Watchlist" class="save-img watchlist-icon">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="moviebox">
+                            <img src="it ends with us.jpg" alt="" class="movieimg">
+                            <div class="text">
+                                <h2 class="movietitle">It Ends With Us</h2>
+                                <span class="genre">Romance</span>
+                                <a href="#" class="playbutton">
+                                    <i class='bx bxs-right-arrow' ></i>
+                                </a>
+                                <img src="save-instagram.png" alt="save to Watchlist" class="save-img watchlist-icon">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="moviebox">
+                            <img src="Black Panther.jpg" alt="" class="movieimg">
+                            <div class="text">
+                                <h2 class="movietitle">Black Panther</h2>
+                                <span class="genre">Action</span>
+                                <a href="#" class="playbutton">
+                                    <i class='bx bxs-right-arrow' ></i>
+                                </a>
+                                <img src="save-instagram.png" alt="save to Watchlist" class="save-img watchlist-icon">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="moviebox">
+                            <img src="a-quiet-place-day-one.jpg" alt="" class="movieimg">
+                            <div class="text">
+                                <h2 class="movietitle">A Quiet Place: Day One</h2>
+                                <span class="genre">Thriller</span>
+                                <a href="#" class="playbutton">
+                                    <i class='bx bxs-right-arrow' ></i>
+                                </a>
+                                <img src="save-instagram.png" alt="save to Watchlist" class="save-img watchlist-icon">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="moviebox">
+                            <img src="Smile.png" alt="" class="movieimg">
+                            <div class="text">
+                                <h2 class="movietitle">Smile</h2>
+                                <span class="genre">Horror</span>
+                                <a href="#" class="playbutton">
+                                    <i class='bx bxs-right-arrow' ></i>
+                                </a>
+                                <img src="save-instagram.png" alt="save to Watchlist" class="save-img watchlist-icon">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="moviebox">
+                            <img src="inside-out-2.jpg" alt="" class="movieimg">
+                            <div class="text">
+                                <h2 class="movietitle">Inside Out 2</h2>
+                                <span class="genre">Family</span>
+                                <a href="#" class="playbutton">
+                                    <i class='bx bxs-right-arrow' ></i>
+                                </a>
+                                <img src="save-instagram.png" alt="save to Watchlist" class="save-img watchlist-icon">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="moviebox">
+                            <img src="despicable-me-4.jpg" alt="" class="movieimg">
+                            <div class="text">
+                                <h2 class="movietitle">Despicable Me 4</h2>
+                                <span class="genre">Family</span>
+                                <a href="#" class="playbutton">
+                                    <i class='bx bxs-right-arrow' ></i>
+                                </a>
+                                <img src="save-instagram.png" alt="save to Watchlist" class="save-img watchlist-icon">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="moviebox">
+                            <img src="trap.jpg" alt="" class="movieimg">
+                            <div class="text">
+                                <h2 class="movietitle">Trap</h2>
+                                <span class="genre">Thriller</span>
+                                <a href="#" class="playbutton">
+                                    <i class='bx bxs-right-arrow' ></i>
+                                </a>
+                                <img src="save-instagram.png" alt="save to Watchlist" class="save-img watchlist-icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+              
+            </div>
+        </section>
+
+        <section class="popular container" id="popular-movies">
+            <div class="heading">
+                <h2 class="title">Popular Movies</h2>
+            </div>
+            <div class="popular-movies swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="moviebox">
+                            <img src="shutter island-thriller.jpg" alt="" class="movieimg">
+                            <div class="text">
+                                <h2 class="movietitle">Shutter Island</h2>
+                                <span class="genre">Thriller</span>
+                                <a href="#" class="playbutton">
+                                    <i class='bx bxs-right-arrow' ></i>
+                                </a>
+                                <img src="save-instagram.png" alt="save to Watchlist" class="save-img watchlist-icon">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="moviebox">
+                            <img src="it ends with us.jpg" alt="" class="movieimg">
+                            <div class="text">
+                                <h2 class="movietitle">It Ends With Us</h2>
+                                <span class="genre">Romance</span>
+                                <a href="#" class="playbutton">
+                                    <i class='bx bxs-right-arrow' ></i>
+                                </a>
+                                <img src="save-instagram.png" alt="save to Watchlist" class="save-img watchlist-icon">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="moviebox">
+                            <img src="the curious case of benjamin button.png" alt="" class="movieimg">
+                            <div class="text">
+                                <h2 class="movietitle">The curious case of benjamin button</h2>
+                                <span class="genre">Romance</span>
+                                <a href="#" class="playbutton">
+                                    <i class='bx bxs-right-arrow' ></i>
+                                </a>
+                                <img src="save-instagram.png" alt="save to Watchlist" class="save-img watchlist-icon">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="moviebox">
+                            <img src="titanic.jpg" alt="" class="movieimg">
+                            <div class="text">
+                                <h2 class="movietitle">Titanic</h2>
+                                <span class="genre">Romance</span>
+                                <a href="#" class="playbutton">
+                                    <i class='bx bxs-right-arrow' ></i>
+                                </a>
+                                <img src="save-instagram.png" alt="save to Watchlist" class="save-img watchlist-icon">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="moviebox">
+                            <img src="seven.jpg" alt="" class="movieimg">
+                            <div class="text">
+                                <h2 class="movietitle">Seven</h2>
+                                <span class="genre">Thriller</span>
+                                <a href="#" class="playbutton">
+                                    <i class='bx bxs-right-arrow' ></i>
+                                </a>
+                                <img src="save-instagram.png" alt="save to Watchlist" class="save-img watchlist-icon">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="moviebox">
+                            <img src="inside-out-2.jpg" alt="" class="movieimg">
+                            <div class="text">
+                                <h2 class="movietitle">Inside Out 2</h2>
+                                <span class="genre">Family</span>
+                                <a href="#" class="playbutton">
+                                    <i class='bx bxs-right-arrow' ></i>
+                                </a>
+                                <img src="save-instagram.png" alt="save to Watchlist" class="save-img watchlist-icon">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="moviebox">
+                            <img src="despicable-me-4.jpg" alt="" class="movieimg">
+                            <div class="text">
+                                <h2 class="movietitle">Despicable Me 4</h2>
+                                <span class="genre">Family</span>
+                                <a href="#" class="playbutton">
+                                    <i class='bx bxs-right-arrow' ></i>
+                                </a>
+                                <img src="save-instagram.png" alt="save to Watchlist" class="save-img watchlist-icon">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="moviebox">
+                            <img src="Her" alt="" class="movieimg">
+                            <div class="text">
+                                <h2 class="movietitle">Her</h2>
+                                <span class="genre">Romance</span>
+                                <a href="#" class="playbutton">
+                                    <i class='bx bxs-right-arrow' ></i>
+                                </a>
+                                <img src="save-instagram.png" alt="save to Watchlist" class="save-img watchlist-icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+              
+            </div>
+        </section>
+
+        <script src="swiper-bundle.min.js"></script>
+
+        <script src="main.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+        const watchlistButtons = document.querySelectorAll('.save-img'); // Adjust selector if needed
+
+        watchlistButtons.forEach(button => {
+            const movieTitle = button.closest('.moviebox').querySelector('.movietitle').textContent;
+
+            // Check if the movie is already in the watchlist
+            let watchlist = JSON.parse(localStorage.getItem('watchlist')) || [];
+            if (watchlist.some(movie => movie.title === movieTitle)) {
+                button.src = 'save-instagram (1).png'; // Change to your added icon
+            }
+
+            button.addEventListener('click', function() {
+                const movieTitle = this.closest('.moviebox').querySelector('.movietitle').textContent;
+                const movieImage = this.closest('.moviebox').querySelector('.movieimg').src;
+
+                let watchlist = JSON.parse(localStorage.getItem('watchlist')) || [];
+
+                // Check if the movie is already in the watchlist
+                const movieIndex = watchlist.findIndex(movie => movie.title === movieTitle);
+
+                if (movieIndex === -1) {
+                    // Add movie to the watchlist
+                    watchlist.push({ title: movieTitle, image: movieImage });
+                    this.src = 'save-instagram (1).png'; // Change to your added icon
+                } else {
+                    // Remove movie from the watchlist
+                    watchlist.splice(movieIndex, 1);
+                    this.src = 'save-instagram.png'; // Change to your original icon
+                }
+
+                localStorage.setItem('watchlist', JSON.stringify(watchlist));
+            });
+        });
+    });
+        </script>
+    </body>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MyMovie. All rights reserved.</p>
+        </div>
+    </footer>
+</html>

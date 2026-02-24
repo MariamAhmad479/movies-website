@@ -1,0 +1,27 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(196, 167, 129);
+    text-align: center;
+    color: #333;
+    margin:  0 ;
+    padding: 0;
+}
+header{
+    background-color: burlywood;
+    color:azure; 
+    padding: 1px 0; 
+    text-align: center;
+}
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+button{
+    background-color:aliceblue;
+    color:black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: #333 0.3s;
+}
