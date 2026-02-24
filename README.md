@@ -44,4 +44,10 @@ This project was developed as part of the **Web Creation 101** course, focusing 
 - DOM manipulation  
 - External library integration (Swiper.js)  
 - Client-side validation  
-- Dynamic content filtering  
+- Dynamic content filtering
+
+---
+
+## 📌 Demo
+
+https://github.com/MariamAhmad479/movies-website/blob/main/Demo_Video.mp4
